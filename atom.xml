@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>APTX4869</title>
+  
+  <subtitle>Talk is cheap, Show me your dick.</subtitle>
+  <link href="https://aptx4869.tv/atom.xml" rel="self"/>
+  
+  <link href="https://aptx4869.tv/"/>
+  <updated>2021-06-28T10:49:05.335Z</updated>
+  <id>https://aptx4869.tv/</id>
+  
+  <author>
+    <name>Tony Chang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>君がいない夏</title>
+    <link href="https://aptx4869.tv/2021/06/24/kimiga_inai_natu/"/>
+    <id>https://aptx4869.tv/2021/06/24/kimiga_inai_natu/</id>
+    <published>2021-06-24T12:36:38.000Z</published>
+    <updated>2021-06-28T10:49:05.335Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="君がいない夏"><a href="#君がいない夏" class="headerlink" title="君がいない夏"></a>君がいない夏</h1><div class="pdf-container" data-target="/pdfs/kimiga_inai_natu.pdf" data-height="500px"></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;君がいない夏&quot;&gt;&lt;a href=&quot;#君がいない夏&quot; class=&quot;headerlink&quot; title=&quot;君がいない夏&quot;&gt;&lt;/a&gt;君がいない夏&lt;/h1&gt;&lt;div class=&quot;pdf-container&quot; data-target=&quot;/pdfs/kimiga_</summary>
+      
+    
+    
+    
+    <category term="语言" scheme="https://aptx4869.tv/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="日本語" scheme="https://aptx4869.tv/categories/%E8%AF%AD%E8%A8%80/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    
+    <category term="日本語" scheme="https://aptx4869.tv/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    <category term="歌詞" scheme="https://aptx4869.tv/tags/%E6%AD%8C%E8%A9%9E/"/>
+    
+    <category term="コナン" scheme="https://aptx4869.tv/tags/%E3%82%B3%E3%83%8A%E3%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>君の涙にこんなに恋してる</title>
+    <link href="https://aptx4869.tv/2021/06/24/kimino_namidani_konnani_koisiteru/"/>
+    <id>https://aptx4869.tv/2021/06/24/kimino_namidani_konnani_koisiteru/</id>
+    <published>2021-06-24T12:33:53.000Z</published>
+    <updated>2021-06-28T10:49:05.335Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="君の涙にこんなに恋してる"><a href="#君の涙にこんなに恋してる" class="headerlink" title="君の涙にこんなに恋してる"></a>君の涙にこんなに恋してる</h1><div class="pdf-container" data-target="/pdfs/kimino_namidani_konnani_koisiteru.pdf" data-height="500px"></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;君の涙にこんなに恋してる&quot;&gt;&lt;a href=&quot;#君の涙にこんなに恋してる&quot; class=&quot;headerlink&quot; title=&quot;君の涙にこんなに恋してる&quot;&gt;&lt;/a&gt;君の涙にこんなに恋してる&lt;/h1&gt;&lt;div class=&quot;pdf-container&quot; data-t</summary>
+      
+    
+    
+    
+    <category term="语言" scheme="https://aptx4869.tv/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="日本語" scheme="https://aptx4869.tv/categories/%E8%AF%AD%E8%A8%80/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    
+    <category term="日本語" scheme="https://aptx4869.tv/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    <category term="歌詞" scheme="https://aptx4869.tv/tags/%E6%AD%8C%E8%A9%9E/"/>
+    
+    <category term="コナン" scheme="https://aptx4869.tv/tags/%E3%82%B3%E3%83%8A%E3%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu商店VSCode无法输入中文</title>
+    <link href="https://aptx4869.tv/2021/06/24/ubuntu_vscode_cannot_input_chinese/"/>
+    <id>https://aptx4869.tv/2021/06/24/ubuntu_vscode_cannot_input_chinese/</id>
+    <published>2021-06-24T03:08:52.000Z</published>
+    <updated>2021-06-28T10:49:05.335Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Ubuntu商店VSCode无法输入中文"><a href="#Ubuntu商店VSCode无法输入中文" class="headerlink" title="Ubuntu商店VSCode无法输入中文"></a>Ubuntu商店VSCode无法输入中文</h1><p>Ubuntu商店内的VSCode无法输入中文。</p><p>Ubuntu商店向导安装的VSCode是snap的削减版本，不支持中文。<br>解决方式是：卸载后重新安装官方版本。</p><p>具体方式</p><ol><li><p>卸载snap版本</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap remove code</span><br></pre></td></tr></table></figure></li><li><p>下载key</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; packages.microsoft.gpg</span><br></pre></td></tr></table></figure></li><li><p>加入key到系统并注入官网地址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/</span><br><span class="line">sudo sh -c &#x27;echo &quot;deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list&#x27;</span><br></pre></td></tr></table></figure></li><li><p>更新获取VSCode信息</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt -y install apt-transport-https</span><br><span class="line">sudo apt update</span><br></pre></td></tr></table></figure></li><li><p>安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Statable Version</span><br><span class="line">sudo apt -y install code</span><br><span class="line"></span><br><span class="line"># Insider Version</span><br><span class="line">sudo apt -y install code-insiders</span><br></pre></td></tr></table></figure></li></ol><p>这样，以后就可以直接执行apt命令更新和管理code了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Ubuntu商店VSCode无法输入中文&quot;&gt;&lt;a href=&quot;#Ubuntu商店VSCode无法输入中文&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu商店VSCode无法输入中文&quot;&gt;&lt;/a&gt;Ubuntu商店VSCode无法输入中文&lt;/h1&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://aptx4869.tv/categories/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://aptx4869.tv/categories/Linux/Ubuntu/"/>
+    
+    
+    <category term="ubuntu" scheme="https://aptx4869.tv/tags/ubuntu/"/>
+    
+    <category term="vscode" scheme="https://aptx4869.tv/tags/vscode/"/>
+    
+    <category term="linux" scheme="https://aptx4869.tv/tags/linux/"/>
+    
+    <category term="中文" scheme="https://aptx4869.tv/tags/%E4%B8%AD%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日本語の変な国名の略称</title>
+    <link href="https://aptx4869.tv/2021/06/17/countries_in_japanese/"/>
+    <id>https://aptx4869.tv/2021/06/17/countries_in_japanese/</id>
+    <published>2021-06-17T09:55:03.000Z</published>
+    <updated>2021-06-28T10:49:05.334Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="日本語の変な国名の略称"><a href="#日本語の変な国名の略称" class="headerlink" title="日本語の変な国名の略称"></a>日本語の変な国名の略称</h1><table><thead><tr><th>国名（こくめい）</th><th>略称(りゃくしょう）</th><th>漢語（かんご）</th></tr></thead><tbody><tr><td>中国（ちゅうごく）</td><td>中（ちゅう）</td><td>中国</td></tr><tr><td>台湾（たいわん）</td><td>台（だい）</td><td>台湾</td></tr><tr><td>香港（ホンコン）</td><td>香（か）</td><td>香港</td></tr><tr><td>日本国（にっぽんこく）</td><td>日（にち）</td><td>日本</td></tr><tr><td>北朝鮮（きたちょうせん）</td><td>朝（ちょう）</td><td>朝鲜</td></tr><tr><td>韓国（かんこく）</td><td>韓（かん）</td><td>韩国</td></tr><tr><td>イギリス</td><td>英（えい）</td><td>英国</td></tr><tr><td>タイ</td><td>泰（たい）</td><td>泰国</td></tr><tr><td>アメリカ合衆国（がっしゅうこく）</td><td>米（べい）</td><td>美国</td></tr><tr><td>フランス</td><td>仏（ぶつ）</td><td>法国</td></tr><tr><td>ドイツ</td><td>独（どく）</td><td>德国</td></tr><tr><td>オーストラリア</td><td>豪（ごう）</td><td>澳大利亚</td></tr><tr><td>ニュージーランド</td><td>乳（にゅう）</td><td>新西兰</td></tr><tr><td>-</td><td>-</td><td>-</td></tr><tr><td>アジア</td><td>亜</td><td>亚洲</td></tr><tr><td>アメリカ</td><td>米</td><td>北美洲</td></tr><tr><td>ョーロッパ</td><td>欧</td><td>欧洲</td></tr><tr><td>南アメリカ</td><td>痾</td><td>南美洲</td></tr><tr><td>アフリカ</td><td>阿</td><td>非洲</td></tr><tr><td>-</td><td>-</td><td>-</td></tr><tr><td>アイスランド</td><td>氷</td><td>冰岛</td></tr><tr><td>アイルランド</td><td>愛</td><td>爱尔兰</td></tr><tr><td>アゼルバイジャン</td><td>是</td><td>阿塞拜疆</td></tr><tr><td>アフガニスタン</td><td>単</td><td>阿富汗</td></tr><tr><td>アラビア</td><td>刺</td><td>阿拉伯</td></tr><tr><td>アラブ首長国連邦</td><td>唖</td><td>阿拉伯联合酋长国</td></tr><tr><td>アルジェリア</td><td>留</td><td>阿尔及利亚</td></tr><tr><td>アルゼンチン</td><td>爾</td><td>阿根廷</td></tr><tr><td>アルバニア</td><td>婆</td><td>阿尔巴尼亚</td></tr><tr><td>アルメニア</td><td>芽</td><td>亚美尼亚</td></tr><tr><td>イエメン</td><td>衣</td><td>也门</td></tr><tr><td>イタリア</td><td>伊</td><td>意大利</td></tr><tr><td>イラン</td><td>斯</td><td>伊朗</td></tr><tr><td>インド</td><td>印</td><td>印度</td></tr><tr><td>インドネシア</td><td>稲</td><td>印度尼西亚</td></tr><tr><td>ウクライナ</td><td>宇</td><td>乌克兰</td></tr><tr><td>ウルグアイ</td><td>鵜</td><td>乌拉圭</td></tr><tr><td>チリ</td><td>智</td><td>智利</td></tr><tr><td>デンマーク</td><td>丁</td><td>丹麦</td></tr><tr><td>ドミニカ</td><td>度</td><td>多米尼加</td></tr><tr><td>トルコ</td><td>土</td><td>土耳其</td></tr><tr><td>ニカラグア</td><td>児</td><td>尼加拉瓜</td></tr><tr><td>ネパール</td><td>ネ</td><td>尼泊尔</td></tr><tr><td>ノルウェー</td><td>諾</td><td>挪威</td></tr><tr><td>バーレーン</td><td>罵</td><td>巴林</td></tr><tr><td>パキスタン</td><td>基</td><td>巴基斯坦</td></tr><tr><td>パナマ</td><td>巴</td><td>巴拿马</td></tr><tr><td>ハワイ</td><td>布</td><td>夏威夷</td></tr><tr><td>ハンガリー</td><td>洪</td><td>匈牙利</td></tr><tr><td>バングラデシュ</td><td>番</td><td>孟加拉国</td></tr><tr><td>フィリピン</td><td>比</td><td>菲律宾</td></tr><tr><td>フィンランド</td><td>芬</td><td>芬兰</td></tr><tr><td>ブータン</td><td>豚（ぶた）</td><td>不丹</td></tr><tr><td>エジプト</td><td>埃</td><td>埃及</td></tr><tr><td>エルサルバドル</td><td>得</td><td>萨尔瓦多</td></tr><tr><td>オーストリア</td><td>墺</td><td>奥地利</td></tr><tr><td>オランダ</td><td>蘭（らん）</td><td>荷兰</td></tr><tr><td>カタール</td><td>嘉</td><td>卡塔尔</td></tr><tr><td>カナダ</td><td>加</td><td>加拿大</td></tr><tr><td>カンボジア</td><td>柬</td><td>柬埔寨</td></tr><tr><td>キプロス</td><td>機</td><td>塞浦路斯</td></tr><tr><td>キューバ</td><td>玖</td><td>古巴</td></tr><tr><td>ギリシャ</td><td>希</td><td>希腊</td></tr><tr><td>コロンピア</td><td>哥</td><td>哥伦比亚</td></tr><tr><td>シリア</td><td>尻（しり）</td><td>叙利亚</td></tr><tr><td>シンガポール</td><td>新</td><td>新加坡</td></tr><tr><td>スイス</td><td>瑞</td><td>瑞士</td></tr><tr><td>スウェーデン</td><td>典</td><td>瑞典</td></tr><tr><td>スペイン</td><td>西</td><td>西班牙</td></tr><tr><td>スリランカ（セイロン）</td><td>正</td><td>斯里兰卡（锡兰）</td></tr><tr><td>プラジル</td><td>伯</td><td>巴西</td></tr><tr><td>ブルガリア</td><td>勃</td><td>保加利亚</td></tr><tr><td>べトナム</td><td>越</td><td>越南</td></tr><tr><td>べネズエラ</td><td>委</td><td>委内瑞拉</td></tr><tr><td>べラルーシ</td><td>辺</td><td>白俄罗斯</td></tr><tr><td>ペルー</td><td>秘</td><td>秘鲁</td></tr><tr><td>ベルギー</td><td>白</td><td>比利时</td></tr><tr><td>ポーランド</td><td>波</td><td>波兰</td></tr><tr><td>ボリビア</td><td>戊</td><td>玻利维亚</td></tr><tr><td>ポルトガル</td><td>葡</td><td>葡萄牙</td></tr><tr><td>ミャンマー（ビルマ）</td><td>缅</td><td>缅甸</td></tr><tr><td>メキシコ</td><td>墨</td><td>墨西哥</td></tr><tr><td>モナコ</td><td>摩</td><td>摩纳哥</td></tr><tr><td>モルドバ</td><td>喪</td><td>摩尔多瓦</td></tr><tr><td>ヨルダン</td><td>約</td><td>约旦</td></tr><tr><td>ラオス</td><td>裸</td><td>老挝</td></tr><tr><td>ルーマニア</td><td>尼</td><td>罗马尼亚</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;日本語の変な国名の略称&quot;&gt;&lt;a href=&quot;#日本語の変な国名の略称&quot; class=&quot;headerlink&quot; title=&quot;日本語の変な国名の略称&quot;&gt;&lt;/a&gt;日本語の変な国名の略称&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;国名（こくめい）&lt;/th</summary>
+      
+    
+    
+    
+    <category term="语言" scheme="https://aptx4869.tv/categories/%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="日本語" scheme="https://aptx4869.tv/categories/%E8%AF%AD%E8%A8%80/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    
+    <category term="日本語" scheme="https://aptx4869.tv/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+    
+    <category term="国名" scheme="https://aptx4869.tv/tags/%E5%9B%BD%E5%90%8D/"/>
+    
+    <category term="略称" scheme="https://aptx4869.tv/tags/%E7%95%A5%E7%A7%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ClubHouse穿越域名</title>
+    <link href="https://aptx4869.tv/2021/03/17/domains_for_clubhouse/"/>
+    <id>https://aptx4869.tv/2021/03/17/domains_for_clubhouse/</id>
+    <published>2021-03-17T01:25:03.000Z</published>
+    <updated>2021-06-28T10:49:05.334Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ClubHouse穿越域名"><a href="#ClubHouse穿越域名" class="headerlink" title="ClubHouse穿越域名"></a>ClubHouse穿越域名</h1><p>如果你的穿越规则里没有加入ClubHouse的域名，可以手动添加如下域名至规则中。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">clubhouseapi.com</span><br><span class="line">clubhouseprod.s3.amazonaws.com</span><br><span class="line">clubhouse.pubnub.com</span><br><span class="line">maintenance.joinclubhouse.com</span><br><span class="line">ap3.agora.ioi</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;ClubHouse穿越域名&quot;&gt;&lt;a href=&quot;#ClubHouse穿越域名&quot; class=&quot;headerlink&quot; title=&quot;ClubHouse穿越域名&quot;&gt;&lt;/a&gt;ClubHouse穿越域名&lt;/h1&gt;&lt;p&gt;如果你的穿越规则里没有加入ClubHouse的域名，</summary>
+      
+    
+    
+    
+    <category term="穿越" scheme="https://aptx4869.tv/categories/%E7%A9%BF%E8%B6%8A/"/>
+    
+    
+    <category term="ClubHouse" scheme="https://aptx4869.tv/tags/ClubHouse/"/>
+    
+    <category term="穿越" scheme="https://aptx4869.tv/tags/%E7%A9%BF%E8%B6%8A/"/>
+    
+    <category term="域名" scheme="https://aptx4869.tv/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo，你好</title>
+    <link href="https://aptx4869.tv/1994/02/18/Hello-Hexo/"/>
+    <id>https://aptx4869.tv/1994/02/18/Hello-Hexo/</id>
+    <published>1994-02-18T05:05:06.000Z</published>
+    <updated>2021-06-28T10:49:05.334Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo，你好"><a href="#Hexo，你好" class="headerlink" title="Hexo，你好"></a>Hexo，你好</h1><p>欢迎来到 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>！ 这是你的第一篇文章。 查看 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">文档<i class="fa fa-external-link-alt"></i></span> 了解更多信息。如果你在使用 Hexo 时遇到任何问题，你可以在 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">疑难解答<i class="fa fa-external-link-alt"></i></span> 中找到答案，也可以在 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span> 上问我。</p><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新帖子"><a href="#创建一个新帖子" class="headerlink" title="创建一个新帖子"></a>创建一个新帖子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>更多信息： <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">写作<i class="fa fa-external-link-alt"></i></span></p><h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>更多信息： <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">服务器<i class="fa fa-external-link-alt"></i></span></p><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>更多信息： <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">生成<i class="fa fa-external-link-alt"></i></span></p><h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>更多信息： <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">部署<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Hexo，你好&quot;&gt;&lt;a href=&quot;#Hexo，你好&quot; class=&quot;headerlink&quot; title=&quot;Hexo，你好&quot;&gt;&lt;/a&gt;Hexo，你好&lt;/h1&gt;&lt;p&gt;欢迎来到 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9oZX</summary>
+      
+    
+    
+    
+    <category term="未分类" scheme="https://aptx4869.tv/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="hexo" scheme="https://aptx4869.tv/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://aptx4869.tv/tags/markdown/"/>
+    
+    <category term="md" scheme="https://aptx4869.tv/tags/md/"/>
+    
+    <category term="github" scheme="https://aptx4869.tv/tags/github/"/>
+    
+  </entry>
+  
+</feed>
