@@ -1,4 +1,4 @@
-const ap = new APlayer({
+<script src="/assets/js/APlayer.min.js"> </script>const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
     autoplay: true,
