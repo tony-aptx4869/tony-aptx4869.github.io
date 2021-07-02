@@ -1,7 +1,7 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
-    autoplay: auto,
+    autoplay: true,
     audio: [
       {
         name: "君の涙にこんなに恋してる",
