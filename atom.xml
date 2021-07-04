@@ -39,7 +39,7 @@
     
     <category term="词云" scheme="https://aptx4869.tv/tags/wordcloud/"/>
     
-    <category term="汉语" scheme="https://aptx4869.tv/tags/chinese/"/>
+    <category term="汉语" scheme="https://aptx4869.tv/tags/chinese-han/"/>
     
   </entry>
   
@@ -64,7 +64,7 @@
     
     <category term="日本語" scheme="https://aptx4869.tv/tags/japanese/"/>
     
-    <category term="歌詞" scheme="https://aptx4869.tv/tags/%E6%AD%8C%E8%A9%9E/"/>
+    <category term="歌詞" scheme="https://aptx4869.tv/tags/lyrics/"/>
     
     <category term="コナン" scheme="https://aptx4869.tv/tags/conan/"/>
     
@@ -91,7 +91,7 @@
     
     <category term="日本語" scheme="https://aptx4869.tv/tags/japanese/"/>
     
-    <category term="歌詞" scheme="https://aptx4869.tv/tags/%E6%AD%8C%E8%A9%9E/"/>
+    <category term="歌詞" scheme="https://aptx4869.tv/tags/lyrics/"/>
     
     <category term="コナン" scheme="https://aptx4869.tv/tags/conan/"/>
     
