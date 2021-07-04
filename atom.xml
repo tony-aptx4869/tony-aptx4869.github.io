@@ -156,7 +156,7 @@
     <link href="https://aptx4869.tv/2021/03/17/domains_for_clubhouse/"/>
     <id>https://aptx4869.tv/2021/03/17/domains_for_clubhouse/</id>
     <published>2021-03-17T01:25:03.000Z</published>
-    <updated>2021-07-02T10:05:49.456Z</updated>
+    <updated>2021-07-04T17:31:28.765Z</updated>
     
     <content type="html"><![CDATA[<h1 id="ClubHouse穿越域名"><a href="#ClubHouse穿越域名" class="headerlink" title="ClubHouse穿越域名"></a>ClubHouse穿越域名</h1><p>如果你的穿越规则里没有加入ClubHouse的域名，可以手动添加如下域名至规则中。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">clubhouseapi.com</span><br><span class="line">clubhouseprod.s3.amazonaws.com</span><br><span class="line">clubhouse.pubnub.com</span><br><span class="line">maintenance.joinclubhouse.com</span><br><span class="line">ap3.agora.ioi</span><br></pre></td></tr></table></figure>]]></content>
     
