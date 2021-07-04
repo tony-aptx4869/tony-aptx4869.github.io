@@ -1885,7 +1885,7 @@ pre code {
   font-size: 12px;
 }
 .back-to-top {
-  bottom: -100px;
+  bottom: 80px;
   box-sizing: border-box;
   color: #fff;
   padding: 0 6px;
@@ -1914,7 +1914,7 @@ pre code {
   color: #fc6423;
 }
 .back-to-top.back-to-top-on {
-  bottom: 30px;
+  bottom: 80px;
 }
 .noscript-warning {
   background-color: #f55;
