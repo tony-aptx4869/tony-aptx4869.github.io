@@ -6,7 +6,7 @@
   <link href="https://aptx4869.tv/atom.xml" rel="self"/>
   
   <link href="https://aptx4869.tv/"/>
-  <updated>2021-07-02T09:57:38.844Z</updated>
+  <updated>2021-07-04T18:07:32.848Z</updated>
   <id>https://aptx4869.tv/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://aptx4869.tv/2021/07/01/first_word_cloud/"/>
     <id>https://aptx4869.tv/2021/07/01/first_word_cloud/</id>
     <published>2021-07-01T08:16:16.000Z</published>
-    <updated>2021-07-02T09:57:38.844Z</updated>
+    <updated>2021-07-04T18:07:32.848Z</updated>
     
     <content type="html"><![CDATA[<h1 id="第一次，词云"><a href="#第一次，词云" class="headerlink" title="第一次，词云"></a>第一次，词云</h1><p><img src="https://aptx4869.tv/images/20210702144540.png" loading="lazy"></p><span id="more"></span><p>今天习总书记在党成立一百周年大会上讲话，拿讲稿来生成词云。</p><p>使用<span class="exturl" data-url="aHR0cHM6Ly9teXdpcy5jbi93b3JkY2xvdWQ=">微思词云<i class="fa fa-external-link-alt"></i></span>在线生成。</p><div class="note warning"><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>网站自动分词不符合预期，个人做了少量调整。<br>形状中没有中国地图，我手动上传。<br>涉及政治问题，中国地图不发。</p></div><p>测试一下甘特图：</p><pre class="mermaid">ganttsection       SectionCompleted    :done,    des1, 2021-07-01, 2021-07-07Active       :active,  des2, 2021-07-08, 3dParallel 1   :         des3, after des1, 1dParallel 2   :         des4, after des1, 1dParallel 3   :         des5, after des3, 1dParallel 4   :         des6, after des4, 1d</pre>]]></content>
     
@@ -38,6 +38,8 @@
     <category term="工具" scheme="https://aptx4869.tv/tags/tools/"/>
     
     <category term="词云" scheme="https://aptx4869.tv/tags/wordcloud/"/>
+    
+    <category term="汉语" scheme="https://aptx4869.tv/tags/chinese/"/>
     
   </entry>
   
