@@ -19,7 +19,7 @@ const ap = new APlayer({
         name: 'Thêm Một Lần Đau (错错错越南版本 aka 太木人道)',
         artist: 'HKT',
         url: 'https://aptx4869.tv/music/HKT-themmotlandau.mp3',
-        cover: 'https://aptx4869.tv/images/music_covers/HKT-themmotlandau_cover.jpg',
+        cover: 'https://aptx4869.tv/images/music_covers/HKT-themmotlandau_cover.png',
       },
       {
         name: 'สิ่งเล็กเล็กที่เรียกว่ารัก (初恋这件小事)',
