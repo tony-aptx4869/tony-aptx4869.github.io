@@ -6,7 +6,7 @@
   <link href="https://aptx4869.tv/atom.xml" rel="self"/>
   
   <link href="https://aptx4869.tv/"/>
-  <updated>2021-07-04T18:07:32.848Z</updated>
+  <updated>2021-07-06T12:01:11.664Z</updated>
   <id>https://aptx4869.tv/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub Actions妙用：自动镜像同步到其他hub</title>
+    <link href="https://aptx4869.tv/2021/07/06/github_actions_mirror_to_other_hub/"/>
+    <id>https://aptx4869.tv/2021/07/06/github_actions_mirror_to_other_hub/</id>
+    <published>2021-07-06T08:48:16.000Z</published>
+    <updated>2021-07-06T12:01:11.664Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-Actions妙用：自动镜像同步到其他hub"><a href="#GitHub-Actions妙用：自动镜像同步到其他hub" class="headerlink" title="GitHub Actions妙用：自动镜像同步到其他hub"></a>GitHub Actions妙用：自动镜像同步到其他hub</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>我的代码托管在 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==">GitHub<i class="fa fa-external-link-alt"></i></span>，我希望把 GitHub 的某（或某些、或全部）仓库镜像同步到 <span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v">Gitee<i class="fa fa-external-link-alt"></i></span> 和 <span class="exturl" data-url="aHR0cHM6Ly9naXRsYWIuY29tLw==">GitLab<i class="fa fa-external-link-alt"></i></span> 上。不仅是为了异地容灾，同时也可以更多地 show my code。</p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>本文叙述基于如下系统和软件环境。</p><ul><li>macOS Big Sur 11.4</li><li>Visual Studio Code v1.57.1 (macOS)</li><li>VIM v8.2 (macOS version)</li><li>zsh 5.8 (x86_64-apple-darwin20.1.0)</li></ul><h2 id="思绪"><a href="#思绪" class="headerlink" title="思绪"></a>思绪</h2><p>在 Gitee 某个仓库管理里设置了「仓库远程地址(用于强制同步)」之后，该仓库页面上会显示一个同步按钮，但是需要人工手动去点，实在是不友好。而 GitLab 仓库设置里则有「镜像同步」的设置，添加一个从其他仓库拉取（<code>pull</code>）的规则之后，貌似会定期拉取，这个放入备选方案中。</p><p>GitHub 仓库可以配置 <code>WebHook</code>，通过这种方式通知服务程序，触发服务程序去镜像同步仓库，但这种方式需要部署一台服务器。达咩达咩！</p><p>机智的我想到了 <code>GitHub Actions</code> 功能，这个太棒了，可以设置在 <code>push</code>、<code>pull request</code> 之后自动运行，也可以设置schedule定时自动运行。</p><p>那就实现一下吧！</p><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>首先，要搞清楚，对于 GitHub、GitLab、Gitee 来说，如果要提交代码的话，可以通过HTTPS和SSH两种方式。HTTPS 方式需要使用用户名+密码登录，SSH 则只需要配置好公钥和密钥就可以「免密通行」啦。</p><p>我们接下来要做的，首先要生成一对公钥和密钥，然后把公钥交给 GitLab 和 Gitee ，把密钥配置到GitHub仓库中，并在 <code>GitHub Actions</code> 脚本中使用。这样，在向 GitLab 和 Gitee 镜像同步仓库的时候，就可以免密码了。</p><h3 id="生成-SSH-公玥和密钥"><a href="#生成-SSH-公玥和密钥" class="headerlink" title="生成 SSH 公玥和密钥"></a>生成 SSH 公玥和密钥</h3><p>使用 <code>ssh-keygen</code> 命令来生成公玥和密钥。更详细的说明请参阅《<a href="https://aptx4869.tv/2021/07/06/ssh_key_generate">SSH 公钥和密钥创建大法</a>》。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><h3 id="把公钥配置到-GitLab-和-Gitee"><a href="#把公钥配置到-GitLab-和-Gitee" class="headerlink" title="把公钥配置到 GitLab 和 Gitee"></a>把公钥配置到 GitLab 和 Gitee</h3><p>首先要拷贝公钥文件 <code>id_rsa.pub</code> 的内容，可以使用 <code>vim</code>、<code>gedit</code>、<code>Visual Studio Code</code> 等文本编辑器或者IDE。</p><div class="tabs" id="config_public_key"><ul class="nav-tabs"><li class="tab active"><a href="#config_public_key-1"><i class="fa fa-gem"></i>GitLab</a></li><li class="tab"><a href="#config_public_key-2"><i class="fa fa-g"></i>Gitee</a></li></ul><div class="tab-content"><div class="tab-pane active" id="config_public_key-1"><div class="tabs" id="gitlab"><ul class="nav-tabs"><li class="tab active"><a href="#gitlab-1"><i class="fa fa-gear"></i>进入 SSH Keys 页面</a></li><li class="tab"><a href="#gitlab-2"><i class="fa fa-paste"></i>粘贴公钥文件 id_rsa.pub 的内容</a></li><li class="tab"><a href="#gitlab-3"><i class="fa fa-check"></i>确认配置成功</a></li></ul><div class="tab-content"><div class="tab-pane active" id="gitlab-1"><p>在 GitLab 网页上，点击右上角用户头像，在弹出菜单中点击 <code>Preferences</code>。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706191453.png" alt="GitLab_01" loading="lazy"></p><p>随后在左边一列中点击 <code>SSH Keys</code>，即可进入 <code>SSH Keys</code> 页面。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706192357.png" alt="GitLab_02" loading="lazy"></p></div><div class="tab-pane" id="gitlab-2"><p>在 <code>Key</code> 处大文本框中，粘贴公钥文件 <code>id_rsa.pub</code> 的内容，在 <code>Title</code> 处填入名称，便于自己识别。<code>Expires at</code> 处为过期日期，我这里不填写，不填写则为永久有效。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706192813.png" alt="GitLab_03" loading="lazy"></p><p>填写完毕后，点击 <code>Add Key</code> 按钮。</p></div><div class="tab-pane" id="gitlab-3"><p>页面会显示出刚刚添加的公钥内容。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706194146.png" alt="GitLab_04" loading="lazy"></p><p><code>Created on</code> 处的时间是 UTC 时间，请不要介意。</p><p>OK，在 GitLab 上配置好了公钥。</p></div></div></div></div><div class="tab-pane" id="config_public_key-2"><div class="tabs" id="gitee"><ul class="nav-tabs"><li class="tab active"><a href="#gitee-1"><i class="fa fa-gear"></i>进入 SSH公钥 页面</a></li><li class="tab"><a href="#gitee-2"><i class="fa fa-paste"></i>粘贴公钥文件 id_rsa.pub 的内容</a></li><li class="tab"><a href="#gitee-3"><i class="fa fa-check"></i>确认配置成功</a></li></ul><div class="tab-content"><div class="tab-pane active" id="gitee-1"><p>在 Gitee 网页上，点击右上角用户头像，在弹出菜单中点击 <code>设置</code>。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706194423.png" alt="Gitee_01" loading="lazy"></p><p>随后在左边一列中点击 <code>SSH公钥</code>，即可进入 <code>SSH公钥</code> 页面。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706194647.png" alt="Gitee_02" loading="lazy"></p></div><div class="tab-pane" id="gitee-2"><p>在 <code>标题</code> 处填入名称，便于自己识别，在 <code>公钥</code> 处大文本框中，粘贴公钥文件 <code>id_rsa.pub</code> 的内容。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706194906.png" alt="Gitee_03" loading="lazy"></p><p>填写完毕后，点击 <code>确定</code> 按钮。网页弹出对话框，要求验证用户密码。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706195002.png" alt="Gitee_04" loading="lazy"></p><p>输入用户密码之后，点击 <code>验证</code> 按钮。</p></div><div class="tab-pane" id="gitee-3"><p>页面会提示添加成功，并显示出刚刚添加的公钥的 <code>SHA256</code> 校验信息。</p><p><img src="https://aptx4869.tv/images/github_gitlab_gitee/20210706195150.png" alt="GitLab_05" loading="lazy"></p><p>OK，在 Gitee 上配置好了公钥。</p></div></div></div></div></div></div><h3 id="把私钥配置到-GitHub-仓库"><a href="#把私钥配置到-GitHub-仓库" class="headerlink" title="把私钥配置到 GitHub 仓库"></a>把私钥配置到 GitHub 仓库</h3><p>作为镜像源的 GitHub 仓库，要配置私钥，以支撑 GitHub Actions 脚本对 GitLab 和 Gitee 镜像同步的操作。</p><h2 id="To-be-continue"><a href="#To-be-continue" class="headerlink" title="** To be continue... **"></a>** To be continue... **</h2>]]></content>
+    
+    
+    <summary type="html">Gitee仓库页面有同步按钮，但需要手动去点……GitHub可以配置WebHook，但需要一台服务器……于是我想到了GitHub Actions……</summary>
+    
+    
+    
+    <category term="Git" scheme="https://aptx4869.tv/categories/Git/"/>
+    
+    <category term="GitHub" scheme="https://aptx4869.tv/categories/Git/GitHub/"/>
+    
+    
+    <category term="Git" scheme="https://aptx4869.tv/tags/Git/"/>
+    
+    <category term="GitHub" scheme="https://aptx4869.tv/tags/GitHub/"/>
+    
+    <category term="Actions" scheme="https://aptx4869.tv/tags/Actions/"/>
+    
+    <category term="GitLab" scheme="https://aptx4869.tv/tags/GitLab/"/>
+    
+    <category term="Gitee" scheme="https://aptx4869.tv/tags/Gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SSH 公钥和密钥创建大法</title>
+    <link href="https://aptx4869.tv/2021/07/06/ssh_key_generate/"/>
+    <id>https://aptx4869.tv/2021/07/06/ssh_key_generate/</id>
+    <published>2021-07-06T07:48:16.000Z</published>
+    <updated>2021-07-06T11:06:38.942Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="SSH-公钥和密钥创建大法"><a href="#SSH-公钥和密钥创建大法" class="headerlink" title="SSH 公钥和密钥创建大法"></a>SSH 公钥和密钥创建大法</h1><p>在 SSH 远程登录、git 提交代码等情况下，使用 SSH 公钥和密钥是一种非常方便快捷的方式。本文简单介绍SSH 公钥和密钥的生成方法。</p><h2 id="简单科普-SSH-公钥和密钥"><a href="#简单科普-SSH-公钥和密钥" class="headerlink" title="简单科普 SSH 公钥和密钥"></a>简单科普 SSH 公钥和密钥</h2><p>简单地科普一下SSH公钥和密钥。</p><p>SSH公钥和密钥是一种认证机制，服务器用它来确认「你是你」。通过加密算法生成的一对公钥和密钥是相互对应的，一对一的关系，就是过去「一个锁头配一把钥匙」的关系。服务器方拿着公钥，这好比是「锁头」啊，用户方或者客户端方拿着密钥，好比是「钥匙」。「钥匙」能打开「锁头」，服务器就确认通过「你是你」。</p><div class="note warning"><h3 id="请注意"><a href="#请注意" class="headerlink" title="请注意"></a>请注意</h3><p>同学们一定要保护好自己的密钥文件，不要轻易分享给他人！</p></div><h2 id="ssh-keygen-简介"><a href="#ssh-keygen-简介" class="headerlink" title="ssh-keygen 简介"></a><code>ssh-keygen</code> 简介</h2><p><code>ssh-keygen</code> 命令用于为 SSH 生成、管理和转换认证密钥，它支持 <code>RSA</code> 和 <code>DSA</code> 两种认证密钥。</p><h3 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a><strong>语法格式</strong></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen [参数]</span><br></pre></td></tr></table></figure><h3 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a><strong>常用参数</strong></h3><table><thead><tr><th>参数</th><th>含义</th></tr></thead><tbody><tr><td>-b</td><td>指定密钥长度</td></tr><tr><td>-e</td><td>读取openssh的私钥或者公钥文件</td></tr><tr><td>-f</td><td>指定用来保存密钥的文件名</td></tr><tr><td>-t</td><td>指定要创建的密钥类型</td></tr><tr><td>-C</td><td>添加注释</td></tr></tbody></table><h2 id="生成-SSH-公钥和密钥"><a href="#生成-SSH-公钥和密钥" class="headerlink" title="生成 SSH 公钥和密钥"></a>生成 SSH 公钥和密钥</h2><p>打开终端（Terminal），首先确认当前用户的 <code>home</code> 目录下有没有一个叫 <code>.ssh</code> 的目录，不存在的话请先创建，并赋予 <code>700</code> 的权限。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir -p ~/.ssh</span><br><span class="line">chmod 700 ~/.ssh</span><br></pre></td></tr></table></figure><p>直接使用 <code>ssh-keygen</code> 命令，不带任何参数，生成一对默认的公玥和密钥。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure><p>由于我们没有使用 <code>-f</code> 参数指定路径和文件名，程序会有如下提示。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/tony/.ssh/id_rsa):</span><br></pre></td></tr></table></figure><p>直接敲回车，使用默认路径和文件名。程序又会有如下提示，询问是否为密钥文件设置密码。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br></pre></td></tr></table></figure><p>我们为了免密使用，对于这两条提示都直接敲空格。程序会提示如下，表明公钥和密钥文件已经创建完成。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /Users/tony/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /Users/tony/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">……(此处省略内容视实际情况)</span><br></pre></td></tr></table></figure><p><code>id_rsa</code> 文件即是密钥文件，<code>id_rsa.pub</code> 即是公钥文件。</p><p>从这个示例来看，不带任何参数的情况下，<code>ssh-keygen</code> 会默认生成一对 <code>RSA</code> 类型的公钥和密钥。</p><p>如果不放心，可以使用 <code>-t</code> 参数手动指定生成 <code>RSA</code> 类型的公钥和密钥。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure><h2 id="其他示例"><a href="#其他示例" class="headerlink" title="其他示例"></a>其他示例</h2><p>使用 <code>-t</code> 参数手动指定生成 <code>RSA</code> 类型的公钥和密钥，并使用 <code>-C</code> 参数添加注释，例如邮箱地址：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email_address@example.com&quot;</span><br></pre></td></tr></table></figure><p>使用 <code>-e</code> 参数读取openssh的私钥或者公钥文件：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -e</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">Gitee仓库页面有同步按钮，但需要手动去点……GitHub可以配置WebHook，但需要一台服务器……于是我想到了GitHub Actions……</summary>
+    
+    
+    
+    <category term="Git" scheme="https://aptx4869.tv/categories/Git/"/>
+    
+    <category term="GitHub" scheme="https://aptx4869.tv/categories/Git/GitHub/"/>
+    
+    
+    <category term="Git" scheme="https://aptx4869.tv/tags/Git/"/>
+    
+    <category term="GitHub" scheme="https://aptx4869.tv/tags/GitHub/"/>
+    
+    <category term="Actions" scheme="https://aptx4869.tv/tags/Actions/"/>
+    
+    <category term="GitLab" scheme="https://aptx4869.tv/tags/GitLab/"/>
+    
+    <category term="Gitee" scheme="https://aptx4869.tv/tags/Gitee/"/>
+    
+  </entry>
   
   <entry>
     <title>第一次，词云</title>
