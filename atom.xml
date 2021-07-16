@@ -6,7 +6,7 @@
   <link href="https://aptx4869.tv/atom.xml" rel="self"/>
   
   <link href="https://aptx4869.tv/"/>
-  <updated>2021-07-13T11:34:32.867Z</updated>
+  <updated>2021-07-16T05:42:11.692Z</updated>
   <id>https://aptx4869.tv/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>App+1咯！免费的 macOS 菜单栏工具，轻松隐藏图标：Hidden Bar</title>
+    <link href="https://aptx4869.tv/2021/07/16/macos_menubar_hidden_bar/"/>
+    <id>https://aptx4869.tv/2021/07/16/macos_menubar_hidden_bar/</id>
+    <published>2021-07-16T05:27:59.000Z</published>
+    <updated>2021-07-16T05:42:11.692Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.</p><footer><strong>Dwarves Foundation</strong><cite><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2R3YXJ2ZXNmL2hpZGRlbg==">dwarvesf/hidden<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote>]]></content>
+    
+    
+    <summary type="html">一拖、一点，菜单栏清爽多了……</summary>
+    
+    
+    
+    <category term="macOS" scheme="https://aptx4869.tv/categories/macOS/"/>
+    
+    <category term="Apps" scheme="https://aptx4869.tv/categories/macOS/Apps/"/>
+    
+    
+    <category term="macOS" scheme="https://aptx4869.tv/tags/macOS/"/>
+    
+    <category term="App+1" scheme="https://aptx4869.tv/tags/app-plus-1/"/>
+    
+    <category term="菜单栏" scheme="https://aptx4869.tv/tags/menubar/"/>
+    
+    <category term="隐藏" scheme="https://aptx4869.tv/tags/hidden/"/>
+    
+  </entry>
+  
+  <entry>
     <title>macOS 更新 Command Line Tools (CLT)</title>
     <link href="https://aptx4869.tv/2021/07/13/macos_update_command_line_tools/"/>
     <id>https://aptx4869.tv/2021/07/13/macos_update_command_line_tools/</id>
     <published>2021-07-13T09:23:23.000Z</published>
-    <updated>2021-07-13T11:34:32.867Z</updated>
+    <updated>2021-07-14T04:26:30.763Z</updated>
     
     <content type="html"><![CDATA[<p>在使用 <code>brew</code> 安装软件包时，遇到了报错信息。原来是 <code>Command Line Tools (CLT)</code> 版本过旧。</p><blockquote><p>Your Command Line Tools (CLT) does not support macOS 11.<br>It is either outdated or was modified.<br>Please update your Command Line Tools (CLT) or delete it if no updates are available.<br>Update them from Software Update in System Preferences or run:<br>  softwareupdate --all --install --force</p><p>If that doesn&#39;t show you any updates, run:<br>  sudo rm -rf /Library/Developer/CommandLineTools<br>  sudo xcode-select --install</p><p>Alternatively, manually download them from:<br>  <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2Rvd25sb2FkL21vcmUv">https://developer.apple.com/download/more/<i class="fa fa-external-link-alt"></i></span>.<br>You should download the Command Line Tools for Xcode 12.5.</p><footer><strong>Tony Chang</strong><cite>macOS Terminal (zsh)</cite></footer></blockquote><p>人性化的报错信息，把步骤都写明了。</p><p>先执行系统软件更新。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">softwareupdate --all --install --force</span><br></pre></td></tr></table></figure><p>结果提示如下。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Software Update Tool</span><br><span class="line"></span><br><span class="line">Finding available software</span><br><span class="line">No updates are available.</span><br></pre></td></tr></table></figure><p>没有可用更新啊。那只好强行删除掉旧版本，重新安装新版本咯。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /Library/Developer/CommandLineTools</span><br><span class="line">sudo xcode-select --install</span><br></pre></td></tr></table></figure><p>macOS 系统会弹出对话框，同意条款之后开始下载安装最新版本的 <code>Command Line Tools (CLT)</code>。</p>]]></content>
     
