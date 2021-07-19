@@ -137,34 +137,6 @@
 
   
   <url>
-    <loc>https://aptx4869.tv/tags/hexo/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/markdown/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/md/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/github/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/tags/japanese/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
@@ -201,6 +173,34 @@
   
   <url>
     <loc>https://aptx4869.tv/tags/domain/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/hexo/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/markdown/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/md/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/github/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -356,13 +356,6 @@
 
   
   <url>
-    <loc>https://aptx4869.tv/categories/uncategorized/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/categories/languages/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
@@ -377,14 +370,14 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/tools/</loc>
+    <loc>https://aptx4869.tv/categories/uncategorized/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/Git/</loc>
+    <loc>https://aptx4869.tv/categories/tools/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -398,7 +391,21 @@
   </url>
   
   <url>
+    <loc>https://aptx4869.tv/categories/Git/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aptx4869.tv/categories/macOS/</loc>
+    <lastmod>2021-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/Linux/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -427,13 +434,6 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/macOS/CLT/</loc>
-    <lastmod>2021-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/categories/Linux/</loc>
     <lastmod>2021-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
