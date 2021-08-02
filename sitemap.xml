@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_109/</loc>
+    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_114/</loc>
     
     <lastmod>2021-08-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_114/</loc>
+    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_109/</loc>
     
     <lastmod>2021-08-02</lastmod>
     
@@ -347,27 +347,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/app-plus-1/</loc>
-    <lastmod>2021-08-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/menubar/</loc>
-    <lastmod>2021-08-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/hidden/</loc>
-    <lastmod>2021-08-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/tags/clt/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
@@ -383,6 +362,27 @@
   
   <url>
     <loc>https://aptx4869.tv/tags/zsh/</loc>
+    <lastmod>2021-08-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/app-plus-1/</loc>
+    <lastmod>2021-08-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/menubar/</loc>
+    <lastmod>2021-08-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/hidden/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -503,6 +503,13 @@
   </url>
   
   <url>
+    <loc>https://aptx4869.tv/categories/Linux/</loc>
+    <lastmod>2021-08-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aptx4869.tv/categories/tools/wordcloud/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
@@ -524,13 +531,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/macos/apps/</loc>
-    <lastmod>2021-08-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/categories/macos/clt/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
@@ -538,14 +538,14 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
+    <loc>https://aptx4869.tv/categories/macos/apps/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/Linux/</loc>
+    <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
