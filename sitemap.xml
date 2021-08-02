@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_114/</loc>
+    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_168/</loc>
     
     <lastmod>2021-08-02</lastmod>
     
@@ -10,6 +10,13 @@
   
   <url>
     <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_109/</loc>
+    
+    <lastmod>2021-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/2021/08/02/ctflearn_ch_114/</loc>
     
     <lastmod>2021-08-02</lastmod>
     
@@ -468,14 +475,14 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/tools/</loc>
+    <loc>https://aptx4869.tv/categories/languages/japanese/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/languages/japanese/</loc>
+    <loc>https://aptx4869.tv/categories/tools/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -497,13 +504,6 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/macos/</loc>
-    <lastmod>2021-08-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/categories/Linux/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -546,6 +546,13 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
+    <lastmod>2021-08-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/Linux/</loc>
     <lastmod>2021-08-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
