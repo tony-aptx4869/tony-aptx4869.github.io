@@ -334,7 +334,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>888</span>
+      <span>884</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -353,29 +353,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>题目源页面：<span class="exturl" data-url="aHR0cHM6Ly9jdGZsZWFybi5jb20vY2hhbGxlbmdlLzEwOQ==">Don&#39;t Bump Your Head(er) - CTFLearn<i class="fa fa-external-link-alt"></i></span></p>
+        <p>题目源页面：<span class="exturl" data-url="aHR0cHM6Ly9jdGZsZWFybi5jb20vY2hhbGxlbmdlLzEwOQ==">Don’t Bump Your Head(er) - CTFLearn<i class="fa fa-external-link-alt"></i></span></p>
 <p>题目如下：</p>
 <blockquote><p>Try to bypass my security measure on this site!<br><span class="exturl" data-url="aHR0cDovLzE2NS4yMjcuMTA2LjExMy9oZWFkZXIucGhw">http://165.227.106.113/header.php<i class="fa fa-external-link-alt"></i></span></p>
 <footer><strong>Don't Bump Your Head(er) - CTFLearn</strong><cite><span class="exturl" data-url="aHR0cHM6Ly9jdGZsZWFybi5jb20vY2hhbGxlbmdlLzEwOQ==">ctflearn.com/challenge/109<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote>
-
 <hr>
 <p>根据题目极为明显的「暗示」，基本上这道题就是要用到 <code>HTTP</code> 请求的 <code>Header</code>。</p>
 <p>题目说要绕过作者站点设置的安全措施，权且先直接访问这个链接，检查返回信息。如下图。</p>
 <p>这里推荐我常用的：<span class="exturl" data-url="aHR0cDovL2Nvb2xhZi5jb20vdG9vbC9wb3N0">在线HTTP POST GET接口测试请求工具- PostJson<i class="fa fa-external-link-alt"></i></span>。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch109/ch109_01.png" alt="ctflearn_ch109_01" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch109/ch109_01.png" alt="ctflearn_ch109_01"></p>
 <p>图中返回的信息是这样：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Sorry, it seems as if your user agent is not correct, in order to access this website. The one you supplied is: Go-http-client/1.1</span><br><span class="line">&lt;!-- Sup3rS3cr3tAg3nt  --&gt;</span><br></pre></td></tr></table></figure>
-
 <p>哦，原来是说我的 <code>User Agent</code> 是错误的（这里应理解为不符合网站的要求），OK，那我就按照它超级明显地「暗示」，在请求的 <code>Header</code> 中添加 <code>User-Agent</code> 一项并设置其值为 <code>Sup3rS3cr3tAg3nt</code>，再次访问试试。如下图。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch109/ch109_02.png" alt="ctflearn_ch109_02" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch109/ch109_02.png" alt="ctflearn_ch109_02"></p>
 <p>这一次返回信息是这样的：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Sorry, it seems as if you did not just come from the site, &quot;awesomesauce.com&quot;.</span><br><span class="line">&lt;!-- Sup3rS3cr3tAg3nt  --&gt;</span><br></pre></td></tr></table></figure>
-
 <p>嗯，虽说不提示 <code>User Agent</code> 错误了，但是他说我并不是从 <code>awesomesauce.com</code> 这个网站访问的，好的，在请求的 <code>Header</code> 中添加 <code>Referer</code> 一项并设置其值为 <code>awesomesauce.com</code>，再次访问如下图。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch109/ch109_03.png" alt="ctflearn_ch109_03" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch109/ch109_03.png" alt="ctflearn_ch109_03"></p>
 <p>这下 <code>Flag</code> 终于出来了：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Here is your flag: flag&#123;did_this_m3ss_with_y0ur_h34d&#125;</span><br><span class="line">&lt;!-- Sup3rS3cr3tAg3nt  --&gt;</span><br></pre></td></tr></table></figure>
-
 
     </div>
 

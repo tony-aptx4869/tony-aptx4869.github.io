@@ -356,20 +356,18 @@
 <p>题目如下：</p>
 <blockquote><p>Not much to go off here, but it’s all you need:<br>Wikipedia and 128.125.52.138.</p>
 <footer><strong>Wikipedia - CTFLearn</strong><cite><span class="exturl" data-url="aHR0cHM6Ly9jdGZsZWFybi5jb20vY2hhbGxlbmdlLzE2OA==">ctflearn.com/challenge/168<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote>
-
 <hr>
 <p>访问 <code>Wikipedia</code> ，搜索 <code>flag</code> 。</p>
 <p>打开的页面为 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvRmxhZw==">Flag - Wikipedia<i class="fa fa-external-link-alt"></i></span>。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_01.png" alt="ctflearn_ch168_01" loading="lazy"></p>
-<p>在页面中点按 <code>View history</code> ，这时打开了页面 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3cvaW5kZXgucGhwP3RpdGxlPUZsYWcmYWN0aW9uPWhpc3Rvcnk=">Flag: Revision history - Wikipedia<i class="fa fa-external-link-alt"></i></span> 。点按 <code>Filter revisions</code> 展开搜索区，点按 <code>To date</code> 下方的文本框，将日期选定到 <code>Mon, 17 Aug 2015</code>（2015年8月17日），可以在结果中找到包含 <code>IP</code> 地址 <code>128.125.52.138</code> 的这一条记录。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_02.png" alt="ctflearn_ch168_02" loading="lazy"></p>
-<p>点按这条记录中的 <code>17:13, 17 August 2015</code> 字样，在打开的 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3cvaW5kZXgucGhwP3RpdGxlPUZsYWcmb2xkaWQ9Njc2NTQwNTQw">Flag - Wikipedia<i class="fa fa-external-link-alt"></i></span> 页面可以浏览到这一历史版本。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_03.png" alt="ctflearn_ch168_03" loading="lazy"></p>
-<p>点按 <code>Previous revision</code> 左侧的 <code>diff</code> ，在打开的 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3cvaW5kZXgucGhwP3RpdGxlPUZsYWcmZGlmZj1wcmV2Jm9sZGlkPTY3NjU0MDU0MA==">Flag: Difference between revisions - Wikipedia<i class="fa fa-external-link-alt"></i></span> 页面可以看到这一历史版本相较上一历史版本做出了哪些修改。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_04.png" alt="ctflearn_ch168_04" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_01.png" alt="ctflearn_ch168_01"></p>
+<p>在页面中点按 <code>View history</code> ，这时打开了页面 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3cvaW5kZXgucGhwP3RpdGxlPUZsYWcmYW1wO2FjdGlvbj1oaXN0b3J5">Flag: Revision history - Wikipedia<i class="fa fa-external-link-alt"></i></span> 。点按 <code>Filter revisions</code> 展开搜索区，点按 <code>To date</code> 下方的文本框，将日期选定到 <code>Mon, 17 Aug 2015</code>（2015年8月17日），可以在结果中找到包含 <code>IP</code> 地址 <code>128.125.52.138</code> 的这一条记录。</p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_02.png" alt="ctflearn_ch168_02"></p>
+<p>点按这条记录中的 <code>17:13, 17 August 2015</code> 字样，在打开的 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3cvaW5kZXgucGhwP3RpdGxlPUZsYWcmYW1wO29sZGlkPTY3NjU0MDU0MA==">Flag - Wikipedia<i class="fa fa-external-link-alt"></i></span> 页面可以浏览到这一历史版本。</p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_03.png" alt="ctflearn_ch168_03"></p>
+<p>点按 <code>Previous revision</code> 左侧的 <code>diff</code> ，在打开的 <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3cvaW5kZXgucGhwP3RpdGxlPUZsYWcmYW1wO2RpZmY9cHJldiZhbXA7b2xkaWQ9Njc2NTQwNTQw">Flag: Difference between revisions - Wikipedia<i class="fa fa-external-link-alt"></i></span> 页面可以看到这一历史版本相较上一历史版本做出了哪些修改。</p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch168/ch168_04.png" alt="ctflearn_ch168_04"></p>
 <p>果不其然，<code>Flag</code> 就在这里。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">In a certain CTF competition, the flag to acertain problem is</span><br><span class="line">&quot;cNi76bV2IVERlh97hP&quot;.</span><br></pre></td></tr></table></figure>
-
 
     </div>
 

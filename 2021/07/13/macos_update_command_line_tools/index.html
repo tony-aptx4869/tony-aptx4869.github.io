@@ -329,7 +329,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>846</span>
+      <span>838</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -349,22 +349,17 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>在使用 <code>brew</code> 安装软件包时，遇到了报错信息。原来是 <code>Command Line Tools (CLT)</code> 版本过旧。</p>
-<blockquote><p>Your Command Line Tools (CLT) does not support macOS 11.<br>It is either outdated or was modified.<br>Please update your Command Line Tools (CLT) or delete it if no updates are available.<br>Update them from Software Update in System Preferences or run:<br>  softwareupdate --all --install --force</p>
-<p>If that doesn&#39;t show you any updates, run:<br>  sudo rm -rf /Library/Developer/CommandLineTools<br>  sudo xcode-select --install</p>
+<blockquote><p>Your Command Line Tools (CLT) does not support macOS 11.<br>It is either outdated or was modified.<br>Please update your Command Line Tools (CLT) or delete it if no updates are available.<br>Update them from Software Update in System Preferences or run:<br>  softwareupdate —all —install —force</p>
+<p>If that doesn’t show you any updates, run:<br>  sudo rm -rf /Library/Developer/CommandLineTools<br>  sudo xcode-select —install</p>
 <p>Alternatively, manually download them from:<br>  <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2Rvd25sb2FkL21vcmUv">https://developer.apple.com/download/more/<i class="fa fa-external-link-alt"></i></span>.<br>You should download the Command Line Tools for Xcode 12.5.</p>
 <footer><strong>Tony Chang</strong><cite>macOS Terminal (zsh)</cite></footer></blockquote>
-
-
 <p>人性化的报错信息，把步骤都写明了。</p>
 <p>先执行系统软件更新。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">softwareupdate --all --install --force</span><br></pre></td></tr></table></figure>
-
 <p>结果提示如下。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Software Update Tool</span><br><span class="line"></span><br><span class="line">Finding available software</span><br><span class="line">No updates are available.</span><br></pre></td></tr></table></figure>
-
 <p>没有可用更新啊。那只好强行删除掉旧版本，重新安装新版本咯。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /Library/Developer/CommandLineTools</span><br><span class="line">sudo xcode-select --install</span><br></pre></td></tr></table></figure>
-
 <p>macOS 系统会弹出对话框，同意条款之后开始下载安装最新版本的 <code>Command Line Tools (CLT)</code>。</p>
 
     </div>

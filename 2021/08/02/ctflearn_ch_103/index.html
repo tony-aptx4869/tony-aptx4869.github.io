@@ -361,33 +361,28 @@
 <p>题目如下：</p>
 <blockquote><p>Just take the Ls. Check out this zip file and I be the flag will remain hidden.<br><span class="exturl" data-url="aHR0cHM6Ly9tZWdhLm56LyMhbUNnQmpaZ0IhX0Z0bUFtOHNfbXBzSHI3S1d2OEdZVXpoYlRoTm4wSThjSE1CaTRmSlFwOA==">https://mega.nz/#!mCgBjZgB!_FtmAm8s_mpsHr7KWv8GYUzhbThNn0I8cHMBi4fJQp8<i class="fa fa-external-link-alt"></i></span></p>
 <footer><strong>Taking LS - CTFLearn</strong><cite><span class="exturl" data-url="aHR0cHM6Ly9jdGZsZWFybi5jb20vY2hhbGxlbmdlLzEwMw==">ctflearn.com/challenge/103<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote>
-
 <hr>
-<p>题目的文件使用了新西兰的 <code>MEGA</code> 网盘存储，为了方便国内的盆友们，我将副本上传至百度网盘，请参见 <a href="https://aptx4869.tv/2021/08/02/ctflearn_ch_103/#%E9%99%84%E4%BB%B6">附件</a> 一节。</p>
+<p>题目的文件使用了新西兰的 <code>MEGA</code> 网盘存储，为了方便国内的盆友们，我将副本上传至百度网盘，请参见 <a href="https://aptx4869.tv/2021/08/02/ctflearn_ch_103/#附件">附件</a> 一节。</p>
 <p>题目中提到了 <code>ls</code> 命令，也提到了「隐藏」的字眼。先下载 <code>.zip</code> 压缩文件，解压缩，得到一个名为 <code>The Flag</code> 的目录，在操作系统的图形化界面下，只能看到该目录下面的一个 <code>.pdf</code> 文件。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_01.png" alt="ctflearn_ch103_01" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_01.png" alt="ctflearn_ch103_01"></p>
 <p>打开终端窗口，用如下命令进入到 <code>The Flag</code> 目录，并显示包含隐藏文件、目录在内的所有文件、目录。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ctflearn/The\ Flag</span><br><span class="line">ls -al</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_02.png" alt="ctflearn_ch103_02" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_02.png" alt="ctflearn_ch103_02"></p>
 <p>这里有一个名为 <code>.ThePassword</code> 的目录，同样也进入并显示所有文件、目录。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .ThePassword</span><br><span class="line">ls -al</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_03.png" alt="ctflearn_ch103_03" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_03.png" alt="ctflearn_ch103_03"></p>
 <p>看到了一个名为 <code>ThePassword.txt</code> 的文本文件，使用 <code>cat</code> 命令将其打印在终端窗口。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ThePassword.txt</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_04.png" alt="ctflearn_ch103_04" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_04.png" alt="ctflearn_ch103_04"></p>
 <p>看到了密码 <code>Im The Flag</code> ，将该密码复制，打开 <code>The Flag.pdf</code> 文件，在密码框中粘贴密码。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_05.png" alt="ctflearn_ch103_05" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_05.png" alt="ctflearn_ch103_05"></p>
 <p>粘贴密码之后，按回车，即可看到 <code>The Flag.pdf</code> 文件即有 <code>flag</code> 内容。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_06.png" alt="ctflearn_ch103_06" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_06.png" alt="ctflearn_ch103_06"></p>
 <p>要注意的是，<code>flag</code> 内容并非是以可选中、复制的文本形式存储的，要手动照着敲下来，或者使用 <code>OCR</code> 识别。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Here is the Flag: ABCTF&#123;T3Rm1n4l_is_C00l&#125;</span><br></pre></td></tr></table></figure>
-
 <p><code>OCR</code> 识别绝非 100% 正确，我使用了 <code>Google OCR</code> 就多次将小写字母 <code>l</code> 识别成数字 <code>1</code> ，请一定注意 <code>OCR</code> 识别后的人工校验。</p>
 <hr>
-<h3 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h3><p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_file_01.png" alt="ctflearn_ch103_file_01" loading="lazy"></p>
+<h3 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h3><p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch103/ch103_file_01.png" alt="ctflearn_ch103_file_01"></p>
 <p>链接: <span class="exturl" data-url="aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMVFwdmxRTDY4ZURuYVNnSzRnUlZqdnc=">https://pan.baidu.com/s/1QpvlQL68eDnaSgK4gRVjvw<i class="fa fa-external-link-alt"></i></span> 提取码: wutr</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接: https://pan.baidu.com/s/1QpvlQL68eDnaSgK4gRVjvw 提取码: wutr 复制这段内容后打开百度网盘手机App，操作更方便哦 </span><br><span class="line">--来自百度网盘超级会员v8的分享</span><br></pre></td></tr></table></figure>
 

@@ -356,20 +356,17 @@
 <p>题目如下：</p>
 <blockquote><p>This website requires authentication, via POST. However, it seems as if someone has defaced our site. Maybe there is still some way to authenticate?<br><span class="exturl" data-url="aHR0cDovLzE2NS4yMjcuMTA2LjExMy9wb3N0LnBocA==">http://165.227.106.113/post.php<i class="fa fa-external-link-alt"></i></span></p>
 <footer><strong>POST Practice - CTFLearn</strong><cite><span class="exturl" data-url="aHR0cHM6Ly9jdGZsZWFybi5jb20vY2hhbGxlbmdlLzExNA==">ctflearn.com/challenge/114<i class="fa fa-external-link-alt"></i></span></cite></footer></blockquote>
-
 <hr>
 <p>根据题目极为明显的「暗示」，这道题就是要用 <code>POST</code> 方式发送 <code>HTTP</code> 请求。</p>
 <p>题目说这网站通过 <code>POST</code> 身份验证鉴权，貌似有人破坏了这网站。也许还有方法可以进行身份验证。权且先直接访问这个链接，检查返回信息。如下图。</p>
 <p>这里推荐我常用的：<span class="exturl" data-url="aHR0cDovL2Nvb2xhZi5jb20vdG9vbC9wb3N0">在线HTTP POST GET接口测试请求工具- PostJson<i class="fa fa-external-link-alt"></i></span>。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch114/ch114_01.png" alt="ctflearn_ch114_01" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch114/ch114_01.png" alt="ctflearn_ch114_01"></p>
 <p>图中返回的信息是这样：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;This site takes POST data that you have not submitted!&lt;/h1&gt;&lt;!-- username: admin | password: 71urlkufpsdnlkadsf --&gt;</span><br></pre></td></tr></table></figure>
-
 <p>这也太直白了吧？直接「暗示」了 <code>POST</code> 数据里应当包括给出的 <code>username</code> 和 <code>password</code> 信息。OK，那就在请求的 <code>Body</code> 中添加这两项 <code>Key/Value</code> 信息。再次访问如下图。</p>
-<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch114/ch114_02.png" alt="ctflearn_ch114_02" loading="lazy"></p>
+<p><img src="https://aptx4869.tv/images/ctf/ctflearn/ch114/ch114_02.png" alt="ctflearn_ch114_02"></p>
 <p><code>Flag</code> 终于出来了：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;flag&#123;p0st_d4t4_4ll_d4y&#125;&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
-
 
     </div>
 
