@@ -382,20 +382,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/lyrics/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/conan/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/tags/Git/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -425,6 +411,20 @@
   
   <url>
     <loc>https://aptx4869.tv/tags/Gitee/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/lyrics/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/conan/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -480,6 +480,27 @@
   </url>
   
   <url>
+    <loc>https://aptx4869.tv/tags/VMware/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/sreen-splashing/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/pit/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aptx4869.tv/tags/playstation-5/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -516,27 +537,6 @@
   
   <url>
     <loc>https://aptx4869.tv/tags/pcie-gen-4/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/VMware/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/sreen-splashing/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/pit/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -594,14 +594,14 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/proxy/</loc>
+    <loc>https://aptx4869.tv/categories/languages/japanese/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/languages/japanese/</loc>
+    <loc>https://aptx4869.tv/categories/proxy/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -657,13 +657,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/ctf/ctflearn/web/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/categories/ctf/ctflearn/forensics/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -678,14 +671,14 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/macos/apps/</loc>
+    <loc>https://aptx4869.tv/categories/ctf/ctflearn/web/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/ctf/ctflearn/miscellaneous/</loc>
+    <loc>https://aptx4869.tv/categories/macos/apps/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -699,14 +692,21 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/playstation-5/expansion-ssd/</loc>
+    <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
+    <loc>https://aptx4869.tv/categories/ctf/ctflearn/miscellaneous/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/playstation-5/expansion-ssd/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
