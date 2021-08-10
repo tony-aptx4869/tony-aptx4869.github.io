@@ -651,12 +651,12 @@ MHQJRH M.2 2280 SSD heatsink
 </table>
 <h3 id="价格">价格</h3>
 
-        <div id="echarts5703.377382954011" style="width: 100%;height: 500px;margin: 0 auto"></div>
+        <div id="echarts58602.27786943857" style="width: 100%;height: 500px;margin: 0 auto"></div>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
-            var dom = document.getElementById('echarts5703.377382954011');
-            var echarts5703 = echarts.init(dom, 'dark');
+            var dom = document.getElementById('echarts58602.27786943857');
+            var echarts5860 = echarts.init(dom, 'dark');
 
             var app = {};
             var option;
@@ -715,7 +715,7 @@ MHQJRH M.2 2280 SSD heatsink
                             distance: app.config.distance
                         }
                     };
-                    echarts5703.setOption({
+                    echarts5860.setOption({
                         series: [{
                             label: labelOption
                         }, {
@@ -731,7 +731,7 @@ MHQJRH M.2 2280 SSD heatsink
 
             $.get('/data/ps5/expansion_ssd_recommand/six_popular_ssd_prices.json').done(function (data) {
                 //alert(JSON.stringify(data)); 
-                echarts5703.setOption(data);
+                echarts5860.setOption(data);
             });
         </script>
     
@@ -742,12 +742,12 @@ MHQJRH M.2 2280 SSD heatsink
 </ol>
 <h3 id="读写速度">读写速度</h3>
 
-        <div id="echarts88485.21597202843" style="width: 100%;height: 500px;margin: 0 auto"></div>
+        <div id="echarts28673.450445470717" style="width: 100%;height: 500px;margin: 0 auto"></div>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
-            var dom = document.getElementById('echarts88485.21597202843');
-            var echarts8848 = echarts.init(dom, 'dark');
+            var dom = document.getElementById('echarts28673.450445470717');
+            var echarts2867 = echarts.init(dom, 'dark');
 
             var app = {};
             var option;
@@ -806,7 +806,7 @@ MHQJRH M.2 2280 SSD heatsink
                             distance: app.config.distance
                         }
                     };
-                    echarts8848.setOption({
+                    echarts2867.setOption({
                         series: [{
                             label: labelOption
                         }, {
@@ -822,7 +822,7 @@ MHQJRH M.2 2280 SSD heatsink
 
             $.get('/data/ps5/expansion_ssd_recommand/six_popular_ssd_speed.json').done(function (data) {
                 //alert(JSON.stringify(data)); 
-                echarts8848.setOption(data);
+                echarts2867.setOption(data);
             });
         </script>
     
