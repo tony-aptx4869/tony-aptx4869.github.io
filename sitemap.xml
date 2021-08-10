@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aptx4869.tv/data/ps5/expansion_ssd_recommand/six_popular_ssd_prices_dataset.json</loc>
+    <loc>https://aptx4869.tv/2021/08/09/ps5_expansion_ssd_recommand/</loc>
     
     <lastmod>2021-08-10</lastmod>
     
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/2021/08/09/ps5_expansion_ssd_recommand/</loc>
+    <loc>https://aptx4869.tv/data/ps5/expansion_ssd_recommand/six_popular_ssd_speed.json</loc>
     
     <lastmod>2021-08-10</lastmod>
     
@@ -228,27 +228,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/japanese/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/country-or-region/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/abbreviation/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/tags/ctf/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -291,6 +270,27 @@
   </url>
   
   <url>
+    <loc>https://aptx4869.tv/tags/japanese/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/country-or-region/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/abbreviation/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aptx4869.tv/tags/web/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -319,14 +319,21 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/miscellaneous/</loc>
+    <loc>https://aptx4869.tv/tags/tools/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/wikipedia/</loc>
+    <loc>https://aptx4869.tv/tags/wordcloud/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/chinese-han/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -354,21 +361,14 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/tools/</loc>
+    <loc>https://aptx4869.tv/tags/miscellaneous/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/wordcloud/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/chinese-han/</loc>
+    <loc>https://aptx4869.tv/tags/wikipedia/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -573,13 +573,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/languages/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/categories/ctf/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -587,14 +580,7 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/languages/japanese/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/categories/proxy/</loc>
+    <loc>https://aptx4869.tv/categories/languages/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -609,6 +595,20 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/ctf/ctflearn/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/proxy/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/languages/japanese/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -636,13 +636,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/Linux/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/categories/tools/wordcloud/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -650,7 +643,21 @@
   </url>
   
   <url>
+    <loc>https://aptx4869.tv/categories/Linux/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aptx4869.tv/categories/ctf/ctflearn/forensics/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/ctf/ctflearn/miscellaneous/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -686,13 +693,6 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/categories/ctf/ctflearn/miscellaneous/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
