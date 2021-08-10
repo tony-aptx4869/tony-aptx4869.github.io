@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aptx4869.tv/data/ps5/expansion_ssd_recommand/six_popular_ssd_prices.json</loc>
+    <loc>https://aptx4869.tv/data/ps5/expansion_ssd_recommand/six_popular_ssd_prices_dataset.json</loc>
     
     <lastmod>2021-08-10</lastmod>
     
@@ -10,6 +10,13 @@
   
   <url>
     <loc>https://aptx4869.tv/2021/08/09/ps5_expansion_ssd_recommand/</loc>
+    
+    <lastmod>2021-08-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/data/ps5/expansion_ssd_recommand/six_popular_ssd_prices.json</loc>
     
     <lastmod>2021-08-10</lastmod>
     
@@ -263,27 +270,6 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/tags/forensics/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/terminal/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/tags/ls/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aptx4869.tv/tags/web/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
@@ -320,6 +306,27 @@
   
   <url>
     <loc>https://aptx4869.tv/tags/wikipedia/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/forensics/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/terminal/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/tags/ls/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -636,7 +643,7 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/ctf/ctflearn/forensics/</loc>
+    <loc>https://aptx4869.tv/categories/ctf/ctflearn/web/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -650,7 +657,7 @@
   </url>
   
   <url>
-    <loc>https://aptx4869.tv/categories/ctf/ctflearn/web/</loc>
+    <loc>https://aptx4869.tv/categories/ctf/ctflearn/miscellaneous/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -658,6 +665,13 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/macos/apps/</loc>
+    <lastmod>2021-08-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aptx4869.tv/categories/ctf/ctflearn/forensics/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -672,13 +686,6 @@
   
   <url>
     <loc>https://aptx4869.tv/categories/macos/vmware/</loc>
-    <lastmod>2021-08-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aptx4869.tv/categories/ctf/ctflearn/miscellaneous/</loc>
     <lastmod>2021-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
