@@ -353,19 +353,11 @@
 <p>一开始以为是输入法的问题，在尝试换了ibus自带的中文输入法和基于fcitx的谷歌拼音、搜狗拼音之后，尤其是FireFox浏览器等软件内都正常，让我无比确信Ubuntu商店内的这个VSCode有问题。</p>
 <p>通过伟大的谷歌得知，Ubuntu商店向导安装的VSCode是snap的删减版本，不支持中文。</p>
 <p>所以，卸载，安装微软官方版本。</p>
-<ol>
-<li><p>卸载snap版本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap remove code</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>key和安装源</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 下载微软的key</span><br><span class="line">curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; packages.microsoft.gpg</span><br><span class="line"># 把key注册到系统</span><br><span class="line">sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/</span><br><span class="line"># 添加微软安装源</span><br><span class="line">sudo sh -c &#x27;echo &quot;deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list&#x27;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按照新的源更新包信息</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt -y install apt-transport-https</span><br><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Statable Version</span><br><span class="line">sudo apt -y install code</span><br><span class="line"></span><br><span class="line"># Insider Version</span><br><span class="line">sudo apt -y install code-insiders</span><br></pre></td></tr></table></figure>
-</li>
+<ol type="1">
+<li><p>卸载snap版本 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap remove code</span><br></pre></td></tr></table></figure></p></li>
+<li><p>key和安装源 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 下载微软的key</span><br><span class="line">curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor &gt; packages.microsoft.gpg</span><br><span class="line"># 把key注册到系统</span><br><span class="line">sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/</span><br><span class="line"># 添加微软安装源</span><br><span class="line">sudo sh -c &#x27;echo &quot;deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list&#x27;</span><br></pre></td></tr></table></figure></p></li>
+<li><p>按照新的源更新包信息 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt -y install apt-transport-https</span><br><span class="line">sudo apt update</span><br></pre></td></tr></table></figure></p></li>
+<li><p>安装 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Statable Version</span><br><span class="line">sudo apt -y install code</span><br><span class="line"></span><br><span class="line"># Insider Version</span><br><span class="line">sudo apt -y install code-insiders</span><br></pre></td></tr></table></figure></p></li>
 </ol>
 <p>今后，通过apt命令更新和管理VSCode。</p>
 
@@ -471,14 +463,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">19k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">59 分钟</span>
+    <span title="站点阅读时长">1:02</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -531,7 +523,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","mhchem":true,"js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
 <script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.6.1/source/js/third-party/math/mathjax.min.js"></script>
 
 
